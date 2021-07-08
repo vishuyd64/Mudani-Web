@@ -1,0 +1,156 @@
+<app-header></app-header>
+
+<section class="investmentSec boxs">
+    <div class="container-fluid">
+        <div class="investInner investInner33">
+            <h2 class="mainHead ">Custom portfolios</h2>
+            <p class="headmain">Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue,<br>a tempor
+                diam interdum sed. Aliquam mattis scelerisque nisl, eget luctus diam volutpat ac.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="madeThis boxs">
+    <div class="container-fluid">
+        <div class="madeThisIn">
+            <h2 class="mainHead" style="text-transform: uppercase;">Who made <span class="colorBlue">these</span> ?</h2>
+            <p class="headmain">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="expertFlex">
+                <div class="ourExpert">
+                    <div class="expertImg">
+                        <img src="assets/images/expert.png" alt="expert">
+                    </div>
+                    <h2 class="inner">Our Experts</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing andtype setting industry. Lorem Ipsumhas been
+                        the industry's standard dummy text ever since the 1500s</p>
+                </div>
+                <div class="ourExpert">
+                    <div class="expertImg" style="width: 350px;">
+                        <img src="assets/images/spider.png" alt="expert">
+                    </div>
+                    <h2 class="inner">Lorem Ipsum</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing andtype setting industry. Lorem Ipsumhas been
+                        the industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="investAl boxs">
+    <div class="container-fluid">
+        <div class="incestInner">
+            <h2 class="mainHead">WHAT YOU’RE <span class="colorBlue"> INVESTED</span> IN</h2>
+            <p class="headmain">Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue,<br> a tempor
+                diam interdum sed. Aliquam mattis scelerisque nisl, eget luctus diam volutpat ac.</p>
+
+            <div class="investmentPie">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a
+                            href="http://www.arenastage.org/shows-tickets/sub-text/2011-12-season/the-normal-heart/an-epidemic.shtml"></a>
+                        <div id="my-cool-chart"></div>
+                        <div id="chartdiv"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="pieContent">
+                            <ul>
+                                <li class="active stock" (click)="onClick()">Stocks
+                                    <span>
+                                        <p>Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue, a
+                                            tempor diam interdum sed. Aliquam mattis scele risque nisl, eget luctus diam
+                                            volutpat ac.</p>
+                                    </span>
+                                </li>
+                                <li class="bond" (click)="onClick1()">Bonds
+                                    <span>
+                                        <p>Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue, a
+                                            tempor diam interdum sed. Aliquam mattis scele risque nisl, eget luctus diam
+                                            volutpat ac.</p>
+                                    </span>
+                                </li>
+                                <li class="etf" (click)="onClick2()">ETFs
+                                    <span>
+                                        <p>Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue, a
+                                            tempor diam interdum sed. Aliquam mattis scele risque nisl, eget luctus diam
+                                            volutpat ac.</p>
+                                    </span>
+                                </li>
+                                <li class="alternatives" (click)="onClick3()">
+                                    Alternatives
+                                    <span>
+                                        <p>Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue, a
+                                            tempor diam interdum sed. Aliquam mattis scele risque nisl, eget luctus diam
+                                            volutpat ac.</p>
+                                    </span>
+                                </li>
+                                <li class="cash" (click)="onClick4()">Cash
+                                    <span>
+                                        <p>Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue, a
+                                            tempor diam interdum sed. Aliquam mattis scele risque nisl, eget luctus diam
+                                            volutpat ac.</p>
+                                    </span>
+                                </li>
+                                <li class="cryptocurrency" (click)="onClick5()">
+                                    Cryptocurrency
+                                    <span>
+                                        <p>Mauris non dapibus diam, a ultrices erat. Vivamus porttitor luctus augue, a
+                                            tempor diam interdum sed. Aliquam mattis scele risque nisl, eget luctus diam
+                                            volutpat ac.</p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="performance boxs">
+    <div class="container-fluid">
+        <div class="performaceInner">
+            <h2 class="mainHead">OUR <span class="colorBlue"> PERFORMANCE</span></h2>
+            <div class="performanceSlider">
+                <!-- <div class="sliderInput">
+                    <input type="text" class="performDrop" value="Self directed premium" readonly>
+                    <span><i class="fa fa-sort-down"></i></span>
+                </div>
+                <ul>
+                    <li>Self directed premium</li>
+                    <li>Self directed premium 2</li>
+                </ul> -->
+
+                <select name="Starbucks" class="form-control">
+                    <option value="" *ngFor="let item of performanceList">{{item}}</option>
+                </select>
+            </div>
+
+            <div class="performaceTable">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Mudani</th>
+                        <th>S&P 500</th>
+                    </tr>
+                    <tr class="trBorder">
+                        <td><strong>Cumulative Return</strong> </td>
+                        <td>.3%</td>
+                        <td>41.3%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Annualized Return</strong> </td>
+                        <td>17.3%</td>
+                        <td>10.2%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

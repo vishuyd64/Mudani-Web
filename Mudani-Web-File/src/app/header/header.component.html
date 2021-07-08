@@ -1,0 +1,40 @@
+<header class="header boxs">
+    <div class="container-fluid">
+        <div class="headerAll">
+    <div class="headerLogo">
+        <a [routerLink]="['/home']">
+        <img src="assets/images/logo.png" class="img-fluid" alt="logo">
+        </a>
+    </div>
+    <div class="headerContent">
+        <ul>
+            <li class="workHov">
+                <a [routerLink]="['/how-it-work']" class="headContent">How it works<span class="arrow"><img src="assets/images/arrow.png" class="img-fluid" alt="arrow"></span></a>
+               <ul class="howItHover">
+                   <li><a [routerLink]="['/self-directed']">Self-Directed</a></li>
+                   <li><a [routerLink]="['/maanged-subtab']">Managed</a></li>
+                   <li><a  [routerLink]="['/retairment']">Retirement</a></li>
+                   <li><a [routerLink]="['/themantic']">Thematic Investing</a></li>
+                   <li><a [routerLink]="['/stock-back']">Stock-back Rewards</a></li>
+               </ul>
+          
+            </li>
+             <li><a class="headContent" [routerLink]="['/pricing']">Pricing</a></li>
+              <li class="learnHover"><a href="#0" class="headContent">Learn<span class="arrow"><img src="assets/images/arrow.png" class="img-fluid" alt="arrow"></span></a>
+                <ul class="howItHover howItHover2">
+                    <li><a [routerLink]="['/investment']">Investment Strategy</a></li>
+                    <li><a [routerLink]="['/about-us']">About Us</a></li>
+                    <li><a  [routerLink]="['/blog-page']">Blog</a></li>
+
+                </ul>
+            </li>
+        </ul>
+        <ul class="loginPart">
+            <li class="mr-4"><a href="https://play.google.com/store" class="demo">Login</a></li>
+            <li><a href="https://www.apple.com/in/app-store/" class="active">Get started </a></li>
+        </ul>
+
+    </div>
+    </div>
+    </div>
+</header>
